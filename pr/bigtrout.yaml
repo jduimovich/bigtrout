@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: latest-bigtrout-image
+spec:
+  type: image
+  params:
+  - name: url
+    value: jduimovich/bigtrout-v1:latest
+---
