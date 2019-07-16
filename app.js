@@ -5,7 +5,7 @@ app.get("/hello", function(req, res) {
 	console.log("GET /hello ");
 	const headers = JSON.stringify(req.headers, null, 4);
 	console.log(headers); 
-	var target = process.env.TARGET || "Hello V8 Changes World";
+	var target = process.env.TARGET || "Hello V9 Changes World";
 	target += "<br><pre>" + headers + "</pre>";
 	res.send("/hello " + target + "!");
 	console.log("done"); 
