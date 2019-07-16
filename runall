@@ -1,4 +1,6 @@
-sh build
-kubectl apply -f helloworld.yaml
-sh testservice
+#sh build
+IMAGENAME=`cat deploy-version/bigtrout.yaml | grep value | cut -f 2 -d ':'`
+sed "s#PIPELINE_REPLACE#$IMAGENAME#g" <config/deploy.yaml  | kubectl apply -f -
+
+#sh testservice
 
