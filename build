@@ -1,5 +1,4 @@
 IMAGENAME=`cat deploy-version/bigtrout.yaml | grep value | cut -f 2 -d ':'`
-
 docker build -t $IMAGENAME .
 docker push $IMAGENAME
 

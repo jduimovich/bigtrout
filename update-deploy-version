@@ -1,8 +1,0 @@
-kubectl get pipelineresource -n tekton-pipelines latest-bigtrout-image -o yaml | sed s/bigtrout-v/bigtrout-v1/  > new.yaml
-kubectl apply -f new.yaml -n tekton-pipelines
-kubectl get pipelineresource -n tekton-pipelines latest-bigtrout-image -o yaml | grep jduimovich | grep value | tail -n1
-
-
-
-
-
