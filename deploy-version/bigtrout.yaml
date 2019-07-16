@@ -6,5 +6,5 @@ spec:
   type: image
   params:
   - name: url
-    value: jduimovich/bigtrout-v6:latest
+    value: jduimovich/bigtrout-v7:latest
 ---
