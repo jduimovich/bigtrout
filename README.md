@@ -1,5 +1,5 @@
 # bigtrout
-Test
+Test 2
 
 Sample simple app.
 Implements /hello
