@@ -5,7 +5,7 @@ app.get("/hello", function(req, res) {
 	console.log("GET /hello ");
 	const headers = JSON.stringify(req.headers, null, 4);
 	console.log(headers); 
-	var target = "Hello Update me - push me Changes World wow";
+	var target = "Hello Update LIVE UPDATE";
 	target += "<br><pre>" + headers + "</pre>";
 	res.send("/hello " + target + "!");
 	console.log("done"); 
