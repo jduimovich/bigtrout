@@ -1,0 +1,34 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: ibm-github-src-for-bigtrout
+spec:
+  type: git
+  params:
+    - name: url
+      value: https://github.ibm.com/John-Duimovich/bigtrout
+    - name: revision
+      value: master
+---
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: github-src-for-bigtrout
+spec:
+  type: git
+  params:
+    - name: url
+      value: https://github.com/jduimovich/bigtrout
+    - name: revision
+      value: master
+---
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: bigtrout-image
+spec:
+  type: image
+  params:
+  - name: url
+    value: jduimovich/bigtrout:latest
+---
