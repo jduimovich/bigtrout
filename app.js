@@ -5,7 +5,7 @@ app.get("/hello", function(req, res) {
 	console.log("GET /hello ");
 	const headers = JSON.stringify(req.headers, null, 4);
 	console.log(headers); 
-	var target = "Hello Update Wait for new Code WOO HOO ";
+	var target = "Hello Application Demonstrate Push to Deploy with Build";
 	target += "<br><pre>" + headers + "</pre>";
 	res.send("/hello " + target + "!");
 	console.log("done"); 
