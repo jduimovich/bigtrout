@@ -5,5 +5,6 @@ MSG=$1
 echo "This commit added by demo-script at: " $TAG >> README.md
 git add .
 git commit -m "$1 automatic commit for demo"
-sh p
+sh push-to-both-repos
+
 
