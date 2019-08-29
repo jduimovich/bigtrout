@@ -1,6 +1,7 @@
 sh commit-push
 
-sh ../kabanero-demo/tekton-utils/run-webhook-pipeline https://github.ibm.com/John-Duimovich/bigtrout simple-git-build-push
+sh ../devops-tekton-demo/scripts/run-webhook
+
 
 
 
