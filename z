@@ -1,0 +1,18 @@
+
+while true
+do
+#sh ../kabanero-demo/tekton-utils/dpipelineruns
+
+runtimes=$(mktemp)
+retries=15
+until [[ $retries == 0  ]]; do
+   run-p0
+time   sh ../kabanero-demo/until 
+
+   sh ~/dev/kabanero-demo/tekton-utils/run-webhook-pipeline $(git-repo-url) $(kabanero-pipeline-name)
+time   sh ../kabanero-demo/until 
+   retries=$((retries - 1))
+done
+
+done
+
