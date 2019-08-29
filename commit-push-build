@@ -1,9 +1,6 @@
+sh commit-push
 
-TAG=$(date +"h%H-m%M-s%S")
-MSG=$1
-echo "This commit added by demo-script at: " $TAG >> README.md
-git add .
-git commit -m "$1 automatic commit for demo"
-sh push-build
+sh ../kabanero-demo/tekton-utils/run-webhook-pipeline https://github.ibm.com/John-Duimovich/bigtrout simple-git-build-push
+
 
 
