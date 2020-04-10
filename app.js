@@ -7,7 +7,7 @@ app.get("/hello", function(req, res) {
 	console.log(headers); 
 	var target = "New and improved --- run a pipeline -A Hello Application Demonstrate Push to Deploy with Demo";
 	target += "<br><pre>" + headers + "</pre>";
-	res.send("/hello " + target + "!");
+	res.send("/hello there " + target + "!");
 	console.log("done"); 
 });
 
